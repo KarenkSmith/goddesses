@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>goddesses </h1>
+
+{% for god in gods %}
+    <div class="card">
+            <a href="{% url 'detail' god.id %}">
+        <div class="card-content">
+            <span class="card-title"><strong>{{ god.name }}</strong></span>
+            <p>origin: {{ god.origin }}</p>
+            <p>description: {{ god.description }}</p>
+            <p>use for: {{ god.use_for }}</p>
+        </div>
+    </div>
+{% endfor %}
+
+{% endblock %}

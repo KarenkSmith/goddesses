@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>goddess details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ god.name }}</span>
+    <p>origin: {{ god.origin }}</p>
+    <p>description: {{ god.description }}</p>
+    <p>use for: {{ god.use_for }}</p>
+  </div>
+</div>
+
+{% endblock %}
